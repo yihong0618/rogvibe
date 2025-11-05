@@ -1,0 +1,21 @@
+[project]
+name = "rogvibe"
+version = "0.1.0"
+description = "Textual-based terminal lottery wheel."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["textual>=0.40"]
+
+[project.scripts]
+rogvibe = "rogvibe.__main__:main"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["rogvibe*"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
