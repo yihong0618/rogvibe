@@ -205,7 +205,7 @@ class LotteryWheel(Widget):
         participant = self._participants[participant_index]
         label = Text(participant, justify="center", overflow="ellipsis")
         highlight = participant_index == self.current_index
-        border = "gold" if highlight else "dark_cyan"
+        border = "yellow" if highlight else "dark_cyan"
         style = "black on yellow" if highlight else "white on dark_blue"
         label.stylize(style)
         return Panel(
@@ -767,9 +767,9 @@ class SlotMachineApp(App):
         if len(set(results)) == 1:
             winner = results[0]
             self._pending_command = winner
-            # Highlight all reels with gold color for JACKPOT
+            # Highlight all reels with yellow color for JACKPOT
             for reel in self._slot_machine._reels:
-                reel.styles.border = ("heavy", "gold")
+                reel.styles.border = ("heavy", "yellow")
             self._result.update(
                 f"🎉🎉🎉 JACKPOT! All three show: {winner} 🎉🎉🎉\n"
                 f"↩️  Press Enter to run '{winner}' and exit, or q to quit."
