@@ -27,4 +27,7 @@ rogvibe
 uvx rogvibe --slot
 ```
 
-https://github.com/user-attachments/assets/57cb32b2-dd64-4200-9134-1f8daeec7ddf
+
+
+https://github.com/user-attachments/assets/7ba0ad45-fa7b-4007-b59c-dbb547bfb2fd
+
