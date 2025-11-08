@@ -4,7 +4,12 @@ version = "0.5.0"
 description = "Textual-based terminal lottery wheel."
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = ["textual>=0.40"]
+dependencies = [
+    "textual>=0.40",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov>=4.0", "pytest-mock>=3.0", "black", "ruff"]
 
 [project.scripts]
 rogvibe = "rogvibe.__main__:main"
